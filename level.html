@@ -1,1 +1,38 @@
-
+<doctype html>
+  <html>
+    <head></head>
+    <body>
+      <!--人物血量、游戏数据等-->
+      <div>
+        人物血量：<span>200</span>
+        <span></span>
+        
+      </div>
+      <script>
+      <!--初始化变量-->
+      var boss.heatth=50000
+      //声明主角的生命值
+      var boli.health=3
+      //boss换招数的间隔时间
+      var time=30
+      var skills=3
+      var getEffect=boli.getEffect()
+      var heart=boli.heart()
+      if(getEffect){
+              boli.skills+1
+      }
+      //人物的最多大招技能值为3，如果大于三就删除掉多余的
+      if(skills>3){
+                  skills-1
+      }
+      if（boss.died){
+                  boss.say("这，怎么可能！")
+                  system.print("进入下一关")
+      }
+        //如果主角受伤就扣除一条生命
+      if(heart){
+              boli.health-1
+      }
+      </script>
+    </body>
+  </html>
